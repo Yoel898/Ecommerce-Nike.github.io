@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Generales*/
+body {
+    font-family: 'Roboto', sans-serif;    
+    background-color: #e9eae4;
+}
+
+section{
+    margin: auto;
+    max-width: 90%;
+}
+
+#introduccion, #datos, #Formularios{
+    padding-top: 5rem;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+i{
+    font-size: 17px;
+}
+
+h2{
+    color: #127369;
+}
+
+h5{
+    color: #10403B;
+    font-weight: 700;
+}
+
+p{
+    color: #4C5958 !important;
+}
+
+
+#modal1,#modal2,#modal3,#modal4,#modal5,#Formulario{
+    z-index: 99999999;
+}
+
+.color{
+    color:#10403B;
+    font-weight: 600;
+}
+
+/*Sidebar*/
+
+#sidebar {
+    max-width: 200px;
+    min-width: 200px;
+    height: 100vh*8;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(49, 57, 66, 0.5);
+    z-index: 999;
+    background-color: #161F30;
+}
+
+#sidebar.colapso{
+    margin-left: -200px;
+}
+
+#logo a {
+    background: url("../img/logo-nike.svg") no-repeat center center;
+    filter: invert(1);
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 64px;
+    height: 64px;
+}
+
+i span{
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    text-indent: -9969;
+    overflow: hidden;
+}
+
+.btn i span{
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    text-indent: -9969;
+    overflow: hidden;
+}
+
+ul{
+    margin-top: 8rem;
+}
+
+.navbar{
+    background: #e9eae4;
+    width: 100%;
+    z-index: 99;
+
+    animation: anhance-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+}
+
+#nav{
+    min-height: 100vh;
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+
+#nav nav{
+    height: 5rem;
+}
+
+#nav nav button.btn{
+    position: fixed;
+    top: 1rem;
+    z-index: 1000;
+    color: #127369 !important;
+    padding: 0;
+}
+
+/*Carusel*/
+
+.Carrusel-mt{
+    margin-top: 6rem;
+}
+
+picture{
+    max-width: 100%;
+    width: 100%;
+}
+picture img{
+    width: 100%;
+    height: 20vh;
+}
+
+/*Historia*/
+
+#historia p span{
+    color:#10403B;
+    font-weight: 600;
+}
+
+/*Productos*/
+
+#introduccion p span{
+    color:#10403B;
+    font-weight: 600;
+}
+
+.snap{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;  
+    
+    --sb-track-color: #BFBFBF;
+    --sb-thumb-color: #10403B;
+    --sb-size: 3px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+}
+
+  .snap::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  .snap::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  .snap::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    
+}
+
+.card{
+    scroll-snap-align: start;
+    scroll-margin: 1rem;
+
+    border: transparent;
+}
+.tarjeta{
+    width: 100%;
+    height: auto;
+}
+.tarjeta img{
+    width: 50%;
+    margin: auto;
+}
+
+
+/*Ventanas Modales*/
+
+.subtitulos-modales{
+    font-weight: 600;
+    color:#10403B;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+
+.botones-comprar:hover{
+    background-color: #bfbfbf3f !important;
+    color: black !important;
+    border: 1px solid black !important;
+    transition: .5s;
+}
+
+.botones-comprar{
+    background-color: #10403B !important;
+}
+
+
+#libre{
+    margin-top: 8rem;
+}
+
+footer img{
+    filter: drop-shadow(10px 0px 20px #4C5958);
+}
+
+footer #redes a:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+footer #redes a{
+    transition: .5s;
+}
+
+footer a i{
+    height: 32px;
+}
+    
+
+@keyframes anhance-header{
+    to{
+        background: #e9eae4;
+        border-bottom: 1px solid rgb(214, 214, 214);
+    }
+}
+
+#Formulario>div{
+    background-color: #2a51598a;
+}
+
+@media (min-width:1000px){
+    #historia img{
+    max-width: 600px;
+}
+
+#datos{
+    margin-top: 5rem;
+}
+
+#introduccion{
+    margin-top: 2rem;
+}
+
+aside ul li a:hover{
+    color: #697472 !important;
+}
+
+#historia{
+    margin: auto;
+    max-width: 65%;
+}
+}
+
+@media (min-width:1300px){
+    picture img{
+        width: 100%;
+        height: 35vh;
+    }
+}
+
